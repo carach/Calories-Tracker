@@ -167,6 +167,7 @@ const App = ((ItemCtrl, StorageCtrl, UICtrl)=>{
         const items = ItemCtrl.getItems();
   
         // Check if any items
+        console.log(items);
         if(items.length === 0){
           UICtrl.hideList();
         } else {

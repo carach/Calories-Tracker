@@ -36,9 +36,7 @@ const StorageCtrl = (()=>{
         },
         clearItems: ()=>{
             // Check if any items in local storage
-            if (localStorage.getItem('items') !== null) {
-                localStorage.setItem('items', []);
-            }
+            localStorage.removeItem('items');
         },
         getItems: ()=>{
             let items;
